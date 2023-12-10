@@ -1,0 +1,27 @@
+def addition(x,y):
+    return x + y
+def subtraction(x,y):
+    return x - y
+def multiplication(x,y):
+    return x* y
+def division(x,y):
+    return x / y
+print("Welcome to the calculator,")
+x = int(input("enter first number: "))
+y = int(input("enter second number: "))
+choose = int(input(
+    "Choose one option:\n"
+    "1.Addition\n"
+    "2.Subtraction\n"
+    "3.Multiplication\n"
+    "4.Division\n"
+))
+if choose == 1:
+    result = addition(x, y)
+if choose == 2:
+    result = subtraction(x, y)
+if choose == 3:
+    result = multiplication(x, y)
+if choose == 4:
+    result = division(x, y)
+print("result:", result)
